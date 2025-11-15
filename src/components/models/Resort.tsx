@@ -7,7 +7,7 @@ interface ResortProps {
 
 export function Resort(props: ResortProps) {
   const { nodes, materials } = useGLTF(
-    "/models/SkiResort_v2.glb"
+    "/models/SkiResort_test.glb"
   ) as unknown as {
     nodes: { [key: string]: THREE.Mesh };
     materials: { [key: string]: THREE.Material };
@@ -56,7 +56,7 @@ export function Resort(props: ResortProps) {
         geometry={nodes.Ground.geometry}
         material={materials.Ground}
         position={[1.531, -0.259, 1.695]}
-        scale={8.121}
+        scale={61.033}
       />
       <group position={[-1.814, 0.103, -1.941]} scale={0.086}>
         <mesh
@@ -1513,4 +1513,4 @@ export function Resort(props: ResortProps) {
   );
 }
 
-useGLTF.preload("/models/SkiResort_v2.glb");
+useGLTF.preload("/models/SkiResort_test.glb");
