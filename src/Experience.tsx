@@ -5,6 +5,7 @@ const Experience = () => {
   return (
     <>
       <color attach="background" args={["#8785B9"]} />
+      <fogExp2 attach="fog" args={["#8785B9", 0.025]} />
       <OrbitControls
         makeDefault
         minPolarAngle={Math.PI / 8}
