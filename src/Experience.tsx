@@ -4,6 +4,7 @@ import { Resort } from "./components/models/Resort";
 const Experience = () => {
   return (
     <>
+      <color attach="background" args={["#8785B9"]} />
       <OrbitControls
         makeDefault
         minPolarAngle={Math.PI / 8}
