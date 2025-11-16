@@ -1,5 +1,6 @@
 import { Environment, OrbitControls } from "@react-three/drei";
 import { Resort } from "./components/models/Resort";
+import { Snow } from "./components/Snow";
 
 const Experience = () => {
   return (
@@ -33,6 +34,7 @@ const Experience = () => {
         decay={2}
       />
       <Resort />
+      <Snow />
     </>
   );
 };
