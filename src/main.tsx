@@ -7,8 +7,8 @@ import Experience from "./Experience.tsx";
 const cameraSettings = {
   fov: 45,
   near: 0.1,
-  far: 800,
-  position: [-5, 8, -14],
+  far: 400,
+  position: [-10, 4, -8],
 };
 
 createRoot(document.getElementById("root")!).render(

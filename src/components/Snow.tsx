@@ -11,7 +11,7 @@ export function Snow() {
     for (let i = 0; i < particleCount; i++) {
       const i3 = i * 3;
       pos[i3] = (Math.random() - 0.5) * 100;
-      pos[i3 + 1] = Math.random() * 50 + 20;
+      pos[i3 + 1] = Math.random() * 30 + 5;
       pos[i3 + 2] = (Math.random() - 0.5) * 100;
     }
     return pos;
@@ -43,7 +43,7 @@ export function Snow() {
       // Reset particle to top when it falls below ground
       if (positions[i3 + 1] < -10) {
         positions[i3] = (Math.random() - 0.5) * 100;
-        positions[i3 + 1] = Math.random() * 50 + 20;
+        positions[i3 + 1] = Math.random() * 30 + 5;
         positions[i3 + 2] = (Math.random() - 0.5) * 100;
       }
     }
