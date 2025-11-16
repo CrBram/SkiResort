@@ -1,7 +1,7 @@
 import { useGLTF } from "@react-three/drei";
 
-export function Resort(props: { [key: string]: any }) {
-  const { nodes, materials } = useGLTF("/models/SkiResort_v4.glb") as any;
+export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
+  const { nodes, materials } = useGLTF("/models/SkiResort_v6.glb") as any;
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -25,9 +25,9 @@ export function Resort(props: { [key: string]: any }) {
         receiveShadow
         geometry={nodes.Plane.geometry}
         material={materials.Ground}
-        scale={-20.529}
+        scale={-39.205}
       />
-      <group position={[-1.814, 0.103, -3.311]} scale={0.086}>
+      <group position={[-1.814, 0.103, -6.794]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -544,8 +544,8 @@ export function Resort(props: { [key: string]: any }) {
           castShadow
           receiveShadow
           geometry={nodes.SnowBall001.geometry}
-          material={materials["Snow.004"]}
-          position={[-0.055, 3.583, -0.011]}
+          material={materials["Snow.008"]}
+          position={[-0.018, 3.69, -0.045]}
           rotation={[0.019, -0.003, 0]}
           scale={10.723}
         />
@@ -571,8 +571,8 @@ export function Resort(props: { [key: string]: any }) {
           castShadow
           receiveShadow
           geometry={nodes.SnowBall002.geometry}
-          material={materials["Snow.005"]}
-          position={[-0.012, 3.457, -0.007]}
+          material={materials["Snow.009"]}
+          position={[-0.072, 3.621, -0.057]}
           rotation={[0.02, -0.003, 0]}
           scale={[11.679, 13.329, 11.68]}
         />
@@ -598,8 +598,8 @@ export function Resort(props: { [key: string]: any }) {
           castShadow
           receiveShadow
           geometry={nodes.SnowBall003.geometry}
-          material={materials["Snow.006"]}
-          position={[-0.048, 3.361, 0.015]}
+          material={materials["Snow.010"]}
+          position={[-0.013, 3.503, 0.039]}
           rotation={[0.021, -0.003, 0]}
           scale={[9.158, 14.252, 9.161]}
         />
@@ -625,8 +625,8 @@ export function Resort(props: { [key: string]: any }) {
           castShadow
           receiveShadow
           geometry={nodes.SnowBall004.geometry}
-          material={materials.Snow}
-          position={[-0.176, 3.738, 0.28]}
+          material={materials["Snow.011"]}
+          position={[-0.132, 3.895, 0.266]}
           rotation={[0.152, -0.066, 0.028]}
           scale={10.976}
         />
@@ -1224,8 +1224,8 @@ export function Resort(props: { [key: string]: any }) {
           castShadow
           receiveShadow
           geometry={nodes.SnowBall005.geometry}
-          material={materials["Snow.026"]}
-          position={[0.007, 3.785, -0.024]}
+          material={materials["Snow.012"]}
+          position={[0.031, 3.391, -0.032]}
           rotation={[0.019, -0.003, 0]}
           scale={16.479}
         />
@@ -1250,18 +1250,9 @@ export function Resort(props: { [key: string]: any }) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.SnowBall006.geometry}
-          material={materials["Snow.027"]}
-          position={[-0.122, 3.736, -0.017]}
-          rotation={[-0.01, 0.031, 0.044]}
-          scale={16.479}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.SnowBall013.geometry}
-          material={materials["Snow.001"]}
-          position={[-0.268, 4.009, -0.122]}
+          geometry={nodes.SnowBall008.geometry}
+          material={materials["Snow.015"]}
+          position={[-0.159, 3.581, -0.14]}
           rotation={[-0.01, 0.031, 0.044]}
           scale={16.479}
         />
@@ -1286,9 +1277,9 @@ export function Resort(props: { [key: string]: any }) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.SnowBall007.geometry}
-          material={materials["Snow.028"]}
-          position={[-0.152, 3.933, -0.069]}
+          geometry={nodes.SnowBall010.geometry}
+          material={materials["Snow.017"]}
+          position={[-0.205, 3.783, -0.004]}
           rotation={[-0.01, 0.031, 0.044]}
           scale={16.479}
         />
@@ -1313,9 +1304,9 @@ export function Resort(props: { [key: string]: any }) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.SnowBall008.geometry}
-          material={materials["Snow.029"]}
-          position={[0.038, 4.144, 0.156]}
+          geometry={nodes.SnowBall011.geometry}
+          material={materials["Snow.018"]}
+          position={[-0.036, 3.96, -0.089]}
           rotation={[-0.01, 0.031, 0.045]}
           scale={[25.196, 31.067, 25.176]}
         />
@@ -1341,8 +1332,8 @@ export function Resort(props: { [key: string]: any }) {
           castShadow
           receiveShadow
           geometry={nodes.SnowBall009.geometry}
-          material={materials["Snow.030"]}
-          position={[0.001, 3.384, -0.013]}
+          material={materials["Snow.016"]}
+          position={[0.026, 3.523, 0.003]}
           rotation={[0.203, -0.061, -0.11]}
           scale={[16.629, 23.263, 16.958]}
         />
@@ -1367,9 +1358,9 @@ export function Resort(props: { [key: string]: any }) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.SnowBall010.geometry}
-          material={materials["Snow.031"]}
-          position={[-0.243, 4.339, 0.329]}
+          geometry={nodes.SnowBall012.geometry}
+          material={materials["Snow.019"]}
+          position={[-0.411, 3.412, 0.207]}
           rotation={[0.154, 0.026, 0.256]}
           scale={19.984}
         />
@@ -1394,9 +1385,9 @@ export function Resort(props: { [key: string]: any }) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.SnowBall011.geometry}
-          material={materials["Snow.032"]}
-          position={[0.17, 3.59, 0.321]}
+          geometry={nodes.SnowBall006.geometry}
+          material={materials["Snow.013"]}
+          position={[0.035, 3.391, 0.275]}
           rotation={[0.288, -0.036, -0.184]}
           scale={[16.666, 20.503, 17.005]}
         />
@@ -1421,9 +1412,9 @@ export function Resort(props: { [key: string]: any }) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.SnowBall012.geometry}
-          material={materials["Snow.033"]}
-          position={[-0.091, 3.716, 0.058]}
+          geometry={nodes.SnowBall007.geometry}
+          material={materials["Snow.014"]}
+          position={[0.006, 3.026, 0.009]}
           rotation={[-0.202, 0.07, -0.105]}
           scale={[16.705, 29.098, 17.318]}
         />
@@ -1566,9 +1557,9 @@ export function Resort(props: { [key: string]: any }) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.SnowBall014.geometry}
-          material={materials["Snow.002"]}
-          position={[-0.005, 4.4, -0.004]}
+          geometry={nodes.SnowBall013.geometry}
+          material={materials["Snow.035"]}
+          position={[-0.004, 5.318, 0.001]}
           rotation={[0, 0.44, 0]}
           scale={[2.782, 63.516, 2.404]}
         />
@@ -1681,9 +1672,9 @@ export function Resort(props: { [key: string]: any }) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.SnowBall015.geometry}
-          material={materials["Snow.003"]}
-          position={[-0.016, 4.201, 0.01]}
+          geometry={nodes.SnowBall014.geometry}
+          material={materials["Snow.036"]}
+          position={[0.007, 5.657, 0.001]}
           rotation={[0, -0.256, 0]}
           scale={[3.976, 88.772, 3.255]}
         />
@@ -1740,4 +1731,4 @@ export function Resort(props: { [key: string]: any }) {
   );
 }
 
-useGLTF.preload("/models/SkiResort_v4.glb");
+useGLTF.preload("/models/SkiResort_v6.glb");
