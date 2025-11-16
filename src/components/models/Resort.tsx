@@ -1,7 +1,7 @@
 import { useGLTF } from "@react-three/drei";
 
 export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
-  const { nodes, materials } = useGLTF("/models/SkiResort_v6.glb") as any;
+  const { nodes, materials } = useGLTF("/models/SkiResort_v8.glb") as any;
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -27,6 +27,41 @@ export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
         material={materials.Ground}
         scale={-39.205}
       />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Mountains_Backup001.geometry}
+        material={materials["Rock.001"]}
+        position={[13.657, -0.248, -26.173]}
+        scale={5.163}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Mountains_Backup002.geometry}
+        material={materials["Rock.002"]}
+        position={[29.784, -0.248, -16.156]}
+        rotation={[0, -1.194, 0]}
+        scale={5.163}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Mountains_Backup003.geometry}
+        material={materials["Rock.003"]}
+        position={[5.241, -0.248, 29.678]}
+        rotation={[0, -1.194, 0]}
+        scale={2.799}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Mountains_Backup004.geometry}
+        material={materials["Rock.004"]}
+        position={[-26.052, -0.047, 11.322]}
+        rotation={[0, -1.194, 0]}
+        scale={3.74}
+      />
       <group position={[-1.814, 0.103, -6.794]} scale={0.086}>
         <mesh
           castShadow
@@ -50,7 +85,7 @@ export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
           castShadow
           receiveShadow
           geometry={nodes.Cylinder030.geometry}
-          material={materials.TrunkBrown}
+          material={materials["TrunkBrown.008"]}
         />
         <mesh
           castShadow
@@ -216,7 +251,7 @@ export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
         />
       </group>
       <group
-        position={[3.613, 0.089, 6.272]}
+        position={[-8.32, 0.089, 9.608]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -234,7 +269,7 @@ export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
         />
       </group>
       <group
-        position={[3.958, 0.067, 6.712]}
+        position={[-7.975, 0.067, 10.048]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -306,7 +341,7 @@ export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
         />
       </group>
       <group
-        position={[-0.041, 0.115, 7.188]}
+        position={[-11.974, 0.115, 10.523]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -324,7 +359,7 @@ export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
         />
       </group>
       <group
-        position={[0.823, 0.154, 6.669]}
+        position={[-11.11, 0.154, 10.004]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -342,7 +377,7 @@ export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
         />
       </group>
       <group
-        position={[2.354, 0.144, 6.241]}
+        position={[-9.579, 0.144, 9.576]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -650,7 +685,7 @@ export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
         />
       </group>
       <group
-        position={[0.846, 0.154, 7.58]}
+        position={[-11.515, 0.154, 6.726]}
         rotation={[0, -0.069, 0]}
         scale={0.086}
       >
@@ -668,7 +703,7 @@ export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
         />
       </group>
       <group
-        position={[2.432, 0.144, 7.69]}
+        position={[-9.929, 0.144, 6.835]}
         rotation={[0, -0.069, 0]}
         scale={0.086}
       >
@@ -1204,6 +1239,1152 @@ export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
         />
       </group>
       <group
+        position={[8.79, 0.096, 7.737]}
+        rotation={[0, 0.281, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder084.geometry}
+          material={materials["TrunkBrown.009"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder084_1.geometry}
+          material={materials["LeafGreen.008"]}
+        />
+      </group>
+      <group
+        position={[7.049, 0.096, 8.239]}
+        rotation={[0, 0.281, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder103.geometry}
+          material={materials["TrunkBrown.009"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder103_1.geometry}
+          material={materials["LeafGreen.008"]}
+        />
+      </group>
+      <group
+        position={[-0.34, 0.097, 8.258]}
+        rotation={[0, -0.193, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder107.geometry}
+          material={materials["TrunkBrown.010"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder107_1.geometry}
+          material={materials["LeafGreen.009"]}
+        />
+      </group>
+      <group
+        position={[-2.377, 0.144, 8.202]}
+        rotation={[0, -0.193, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder110.geometry}
+          material={materials["TrunkBrown.010"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder110_1.geometry}
+          material={materials["LeafGreen.009"]}
+        />
+      </group>
+      <group
+        position={[-2.66, 0.144, 7.329]}
+        rotation={[0, -0.535, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder111.geometry}
+          material={materials["TrunkBrown.010"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder111_1.geometry}
+          material={materials["LeafGreen.009"]}
+        />
+      </group>
+      <group
+        position={[6.487, 0.154, -7.445]}
+        rotation={[Math.PI, -0.208, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1036.geometry}
+          material={materials["TrunkBrown.070"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1036_1.geometry}
+          material={materials["LeafGreen.069"]}
+        />
+      </group>
+      <group
+        position={[8.043, 0.144, 14.837]}
+        rotation={[0, -0.069, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1038.geometry}
+          material={materials["TrunkBrown.071"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1038_1.geometry}
+          material={materials["LeafGreen.070"]}
+        />
+      </group>
+      <group
+        position={[6.456, 0.154, 14.728]}
+        rotation={[0, -0.069, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1039.geometry}
+          material={materials["TrunkBrown.071"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1039_1.geometry}
+          material={materials["LeafGreen.070"]}
+        />
+      </group>
+      <group
+        position={[10.035, 0.144, 11.095]}
+        rotation={[0, 0.273, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1040.geometry}
+          material={materials["TrunkBrown.071"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1040_1.geometry}
+          material={materials["LeafGreen.070"]}
+        />
+      </group>
+      <group
+        position={[8.503, 0.154, 12.828]}
+        rotation={[0, 0.273, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1041.geometry}
+          material={materials["TrunkBrown.071"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1041_1.geometry}
+          material={materials["LeafGreen.070"]}
+        />
+      </group>
+      <group
+        position={[7.64, 0.115, 13.347]}
+        rotation={[0, 0.273, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1042.geometry}
+          material={materials["TrunkBrown.071"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1042_1.geometry}
+          material={materials["LeafGreen.070"]}
+        />
+      </group>
+      <group
+        position={[11.639, 0.067, 11.567]}
+        rotation={[0, 0.273, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1043.geometry}
+          material={materials["TrunkBrown.071"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1043_1.geometry}
+          material={materials["LeafGreen.070"]}
+        />
+      </group>
+      <group
+        position={[11.294, 0.089, 11.127]}
+        rotation={[0, 0.273, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1044.geometry}
+          material={materials["TrunkBrown.071"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1044_1.geometry}
+          material={materials["LeafGreen.070"]}
+        />
+      </group>
+      <group
+        position={[0.963, 0.032, 11.095]}
+        rotation={[0, 0.273, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1045.geometry}
+          material={materials["TrunkBrown.072"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1045_1.geometry}
+          material={materials["LeafGreen.071"]}
+        />
+      </group>
+      <group
+        position={[-0.912, 0.173, -12.412]}
+        rotation={[Math.PI, -0.671, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1046.geometry}
+          material={materials["TrunkBrown.073"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1046_1.geometry}
+          material={materials["LeafGreen.072"]}
+        />
+      </group>
+      <group
+        position={[-10.448, 0.23, -8.436]}
+        rotation={[Math.PI, -0.671, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1047.geometry}
+          material={materials["TrunkBrown.074"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1047_1.geometry}
+          material={materials["LeafGreen.073"]}
+        />
+      </group>
+      <group
+        position={[-10.936, 0.208, -8.708]}
+        rotation={[Math.PI, -0.671, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1048.geometry}
+          material={materials["TrunkBrown.074"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1048_1.geometry}
+          material={materials["LeafGreen.073"]}
+        />
+      </group>
+      <group
+        position={[-7.94, 0.256, -11.899]}
+        rotation={[Math.PI, -0.671, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1049.geometry}
+          material={materials["TrunkBrown.074"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1049_1.geometry}
+          material={materials["LeafGreen.073"]}
+        />
+      </group>
+      <group
+        position={[-8.535, 0.295, -11.086]}
+        rotation={[Math.PI, -0.671, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1050.geometry}
+          material={materials["TrunkBrown.074"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1050_1.geometry}
+          material={materials["LeafGreen.073"]}
+        />
+      </group>
+      <group
+        position={[-9.275, 0.285, -8.895]}
+        rotation={[Math.PI, -0.671, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1051.geometry}
+          material={materials["TrunkBrown.074"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1051_1.geometry}
+          material={materials["LeafGreen.073"]}
+        />
+      </group>
+      <group
+        position={[-7.384, 0.295, -13.631]}
+        rotation={[Math.PI, -0.329, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1052.geometry}
+          material={materials["TrunkBrown.074"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1052_1.geometry}
+          material={materials["LeafGreen.073"]}
+        />
+      </group>
+      <group
+        position={[-8.889, 0.285, -13.117]}
+        rotation={[Math.PI, -0.329, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1053.geometry}
+          material={materials["TrunkBrown.074"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1053_1.geometry}
+          material={materials["LeafGreen.073"]}
+        />
+      </group>
+      <group
+        position={[6.083, 0.256, -12.01]}
+        rotation={[Math.PI, -0.671, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1054.geometry}
+          material={materials["TrunkBrown.075"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1054_1.geometry}
+          material={materials["LeafGreen.074"]}
+        />
+      </group>
+      <group
+        position={[10.779, 0.285, -12.708]}
+        rotation={[Math.PI, -0.329, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1055.geometry}
+          material={materials["TrunkBrown.075"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1055_1.geometry}
+          material={materials["LeafGreen.074"]}
+        />
+      </group>
+      <group
+        position={[12.284, 0.295, -13.222]}
+        rotation={[Math.PI, -0.329, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1056.geometry}
+          material={materials["TrunkBrown.075"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1056_1.geometry}
+          material={materials["LeafGreen.074"]}
+        />
+      </group>
+      <group
+        position={[9.394, 0.285, -15.098]}
+        rotation={[Math.PI, -0.671, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1057.geometry}
+          material={materials["TrunkBrown.075"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1057_1.geometry}
+          material={materials["LeafGreen.074"]}
+        />
+      </group>
+      <group
+        position={[10.64, 0.295, -16.087]}
+        rotation={[Math.PI, -0.671, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1058.geometry}
+          material={materials["TrunkBrown.075"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1058_1.geometry}
+          material={materials["LeafGreen.074"]}
+        />
+      </group>
+      <group
+        position={[7.733, 0.208, -14.911]}
+        rotation={[Math.PI, -0.671, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1059.geometry}
+          material={materials["TrunkBrown.075"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1059_1.geometry}
+          material={materials["LeafGreen.074"]}
+        />
+      </group>
+      <group
+        position={[8.221, 0.23, -14.64]}
+        rotation={[Math.PI, -0.671, Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1060.geometry}
+          material={materials["TrunkBrown.075"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1060_1.geometry}
+          material={materials["LeafGreen.074"]}
+        />
+      </group>
+      <group position={[1.134, 0.117, -9.397]} scale={0.086}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1061.geometry}
+          material={materials["TrunkBrown.076"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1061_1.geometry}
+          material={materials["LeafGreen.075"]}
+        />
+      </group>
+      <group position={[0.163, 0.074, -9.129]} scale={0.086}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1062.geometry}
+          material={materials["TrunkBrown.076"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1062_1.geometry}
+          material={materials["LeafGreen.075"]}
+        />
+      </group>
+      <group position={[-0.05, 0.041, -9.646]} scale={0.086}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1063.geometry}
+          material={materials["TrunkBrown.076"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1063_1.geometry}
+          material={materials["LeafGreen.075"]}
+        />
+      </group>
+      <group position={[-1.692, 0.114, -9.27]} scale={0.086}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1064.geometry}
+          material={materials["TrunkBrown.076"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1064_1.geometry}
+          material={materials["LeafGreen.075"]}
+        />
+      </group>
+      <group position={[-3.254, 0.114, -9.525]} scale={0.086}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1065.geometry}
+          material={materials["TrunkBrown.076"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1065_1.geometry}
+          material={materials["LeafGreen.075"]}
+        />
+      </group>
+      <group position={[-1.814, 0.103, -10.27]} scale={0.086}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1066.geometry}
+          material={materials["TrunkBrown.076"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1066_1.geometry}
+          material={materials["LeafGreen.075"]}
+        />
+      </group>
+      <group
+        position={[15.008, 0.103, 1.023]}
+        rotation={[0, -1.306, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1067.geometry}
+          material={materials["TrunkBrown.077"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1067_1.geometry}
+          material={materials["LeafGreen.076"]}
+        />
+      </group>
+      <group
+        position={[13.913, 0.114, -0.172]}
+        rotation={[0, -1.306, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1068.geometry}
+          material={materials["TrunkBrown.077"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1068_1.geometry}
+          material={materials["LeafGreen.076"]}
+        />
+      </group>
+      <group
+        position={[14.075, 0.114, 1.403]}
+        rotation={[0, -1.306, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1069.geometry}
+          material={materials["TrunkBrown.077"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1069_1.geometry}
+          material={materials["LeafGreen.076"]}
+        />
+      </group>
+      <group
+        position={[14.867, 0.041, 2.888]}
+        rotation={[0, -1.306, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1070.geometry}
+          material={materials["TrunkBrown.077"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1070_1.geometry}
+          material={materials["LeafGreen.076"]}
+        />
+      </group>
+      <group
+        position={[14.425, 0.074, 3.229]}
+        rotation={[0, -1.306, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1071.geometry}
+          material={materials["TrunkBrown.077"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1071_1.geometry}
+          material={materials["LeafGreen.076"]}
+        />
+      </group>
+      <group
+        position={[14.937, 0.117, 4.097]}
+        rotation={[0, -1.306, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1072.geometry}
+          material={materials["TrunkBrown.077"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1072_1.geometry}
+          material={materials["LeafGreen.076"]}
+        />
+      </group>
+      <group
+        position={[21.986, 0.208, 9.024]}
+        rotation={[-Math.PI, 0.635, -Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1073.geometry}
+          material={materials["TrunkBrown.078"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1073_1.geometry}
+          material={materials["LeafGreen.077"]}
+        />
+      </group>
+      <group
+        position={[21.545, 0.295, 13.858]}
+        rotation={[-Math.PI, 0.977, -Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1074.geometry}
+          material={materials["TrunkBrown.078"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1074_1.geometry}
+          material={materials["LeafGreen.077"]}
+        />
+      </group>
+      <group
+        position={[20.655, 0.285, 12.54]}
+        rotation={[-Math.PI, 0.977, -Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1075.geometry}
+          material={materials["TrunkBrown.078"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1075_1.geometry}
+          material={materials["LeafGreen.077"]}
+        />
+      </group>
+      <group
+        position={[18.754, 0.256, 8.19]}
+        rotation={[-Math.PI, 0.635, -Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1076.geometry}
+          material={materials["TrunkBrown.078"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1076_1.geometry}
+          material={materials["LeafGreen.077"]}
+        />
+      </group>
+      <group
+        position={[15.906, 0.285, -6.551]}
+        rotation={[-Math.PI, 0.977, -Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1077.geometry}
+          material={materials["TrunkBrown.079"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1077_1.geometry}
+          material={materials["LeafGreen.078"]}
+        />
+      </group>
+      <group
+        position={[16.795, 0.295, -5.232]}
+        rotation={[-Math.PI, 0.977, -Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1078.geometry}
+          material={materials["TrunkBrown.079"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1078_1.geometry}
+          material={materials["LeafGreen.078"]}
+        />
+      </group>
+      <group
+        position={[11.73, 0.285, -5.819]}
+        rotation={[-Math.PI, 0.635, -Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1079.geometry}
+          material={materials["TrunkBrown.079"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1079_1.geometry}
+          material={materials["LeafGreen.078"]}
+        />
+      </group>
+      <group
+        position={[14.038, 0.295, -5.677]}
+        rotation={[-Math.PI, 0.635, -Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1080.geometry}
+          material={materials["TrunkBrown.079"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1080_1.geometry}
+          material={materials["LeafGreen.078"]}
+        />
+      </group>
+      <group
+        position={[14.978, 0.256, -5.316]}
+        rotation={[-Math.PI, 0.635, -Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1081.geometry}
+          material={materials["TrunkBrown.079"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1081_1.geometry}
+          material={materials["LeafGreen.078"]}
+        />
+      </group>
+      <group
+        position={[11.115, 0.208, -7.373]}
+        rotation={[-Math.PI, 0.635, -Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1082.geometry}
+          material={materials["TrunkBrown.079"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1082_1.geometry}
+          material={materials["LeafGreen.078"]}
+        />
+      </group>
+      <group
+        position={[10.98, 0.23, -6.83]}
+        rotation={[-Math.PI, 0.635, -Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1083.geometry}
+          material={materials["TrunkBrown.079"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1083_1.geometry}
+          material={materials["LeafGreen.078"]}
+        />
+      </group>
+      <group
+        position={[17.312, 0.173, 1.333]}
+        rotation={[-Math.PI, 0.635, -Math.PI]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1084.geometry}
+          material={materials["TrunkBrown.080"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1084_1.geometry}
+          material={materials["LeafGreen.079"]}
+        />
+      </group>
+      <group
+        position={[-16.012, 0.115, 3.192]}
+        rotation={[0, -0.378, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1085.geometry}
+          material={materials["TrunkBrown.081"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1085_1.geometry}
+          material={materials["LeafGreen.080"]}
+        />
+      </group>
+      <group
+        position={[-16.557, 0.115, 4.698]}
+        rotation={[0, -0.037, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1086.geometry}
+          material={materials["TrunkBrown.081"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1086_1.geometry}
+          material={materials["LeafGreen.080"]}
+        />
+      </group>
+      <group
+        position={[-15.614, 0.154, 6.563]}
+        rotation={[0, -0.037, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1087.geometry}
+          material={materials["TrunkBrown.081"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1087_1.geometry}
+          material={materials["LeafGreen.080"]}
+        />
+      </group>
+      <group
+        position={[-16.069, 0.115, 5.855]}
+        rotation={[0, -0.378, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1088.geometry}
+          material={materials["TrunkBrown.081"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1088_1.geometry}
+          material={materials["LeafGreen.080"]}
+        />
+      </group>
+      <group
+        position={[-15.635, 0.154, 7.13]}
+        rotation={[0, -0.037, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1089.geometry}
+          material={materials["TrunkBrown.081"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1089_1.geometry}
+          material={materials["LeafGreen.080"]}
+        />
+      </group>
+      <group
+        position={[-16.615, 0.115, 7.361]}
+        rotation={[0, -0.037, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1090.geometry}
+          material={materials["TrunkBrown.081"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1090_1.geometry}
+          material={materials["LeafGreen.080"]}
+        />
+      </group>
+      <group
+        position={[-7.222, 0.074, -3.985]}
+        rotation={[0, -0.309, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1091.geometry}
+          material={materials["TrunkBrown.081"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1091_1.geometry}
+          material={materials["LeafGreen.080"]}
+        />
+      </group>
+      <group
+        position={[-8.946, 0.114, -4.684]}
+        rotation={[0, -0.309, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1092.geometry}
+          material={materials["TrunkBrown.081"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1092_1.geometry}
+          material={materials["LeafGreen.080"]}
+        />
+      </group>
+      <group
+        position={[-13.02, 0.024, 0.399]}
+        rotation={[-0.053, -0.3, 0.036]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1093.geometry}
+          material={materials["TrunkBrown.081"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1093_1.geometry}
+          material={materials["LeafGreen.080"]}
+        />
+      </group>
+      <group
+        position={[-14.02, 0.081, 0.057]}
+        rotation={[-0.02, -0.307, -0.006]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1094.geometry}
+          material={materials["TrunkBrown.081"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1094_1.geometry}
+          material={materials["LeafGreen.080"]}
+        />
+      </group>
+      <group
+        position={[-10.357, 0.114, -5.403]}
+        rotation={[0, -0.309, 0]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1095.geometry}
+          material={materials["TrunkBrown.081"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1095_1.geometry}
+          material={materials["LeafGreen.080"]}
+        />
+      </group>
+      <group
+        position={[-12.462, 0.128, -4.327]}
+        rotation={[-0.02, -0.307, -0.006]}
+        scale={0.086}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1096.geometry}
+          material={materials["TrunkBrown.082"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder1096_1.geometry}
+          material={materials["LeafGreen.080"]}
+        />
+      </group>
+      <group
         position={[0.176, 3.04, 2.302]}
         rotation={[-0.019, 0.003, 0]}
         scale={0.061}
@@ -1727,8 +2908,122 @@ export function Resort(props: React.ComponentPropsWithoutRef<"group">) {
         rotation={[0, 0.25, 0]}
         scale={0.277}
       />
+      <group
+        position={[-0.851, 2.158, 0.658]}
+        rotation={[-Math.PI / 2, 0, 0.651]}
+        scale={0.004}
+      >
+        <group rotation={[Math.PI / 2, 0, 0]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_4.geometry}
+            material={materials["03___Default"]}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_5.geometry}
+            material={materials["07___Default"]}
+          />
+        </group>
+      </group>
+      <group
+        position={[1.472, 3.209, 2.11]}
+        rotation={[-Math.PI / 2, 0, -1.621]}
+        scale={0.004}
+      >
+        <group rotation={[Math.PI / 2, 0, 0]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_4001.geometry}
+            material={materials["03___Default.001"]}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_5001.geometry}
+            material={materials["07___Default.001"]}
+          />
+        </group>
+      </group>
+      <group
+        position={[3.557, 4.029, 1.086]}
+        rotation={[-Math.PI / 2, 0, -2.694]}
+        scale={0.004}
+      >
+        <group rotation={[Math.PI / 2, 0, 0]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_4002.geometry}
+            material={materials["03___Default.002"]}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_5002.geometry}
+            material={materials["07___Default.002"]}
+          />
+        </group>
+      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Fence_Var1001.geometry}
+        material={materials["Fence.002"]}
+        position={[-2.083, 1.043, -1.013]}
+        rotation={[0, -0.203, 0]}
+        scale={[0.023, 0.037, 0.023]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Fence_Var2001.geometry}
+        material={materials["Fence.003"]}
+        position={[-2.08, 1.007, -1.367]}
+        rotation={[-0.097, 0.011, 0]}
+        scale={[0.023, 0.037, 0.023]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Fence_Var1002.geometry}
+        material={materials["Fence.004"]}
+        position={[-2.123, 1.045, -0.679]}
+        rotation={[-2.885, 1.418, 2.882]}
+        scale={[0.023, 0.037, 0.023]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Fence_Var1003.geometry}
+        material={materials["Fence.005"]}
+        position={[-2.133, 0.973, -1.724]}
+        rotation={[-0.097, 0.131, 0]}
+        scale={[0.023, 0.037, 0.023]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Fence_Var1005.geometry}
+        material={materials["Fence.008"]}
+        position={[-0.978, 2.941, 2.462]}
+        rotation={[-0.024, 0.089, 0]}
+        scale={[0.023, 0.037, 0.017]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Fence_Var2002.geometry}
+        material={materials["Fence.006"]}
+        position={[-0.82, 2.936, 2.162]}
+        rotation={[-0.001, -0.494, 0]}
+        scale={[0.023, 0.037, 0.023]}
+      />
     </group>
   );
 }
 
-useGLTF.preload("/models/SkiResort_v6.glb");
+useGLTF.preload("/models/SkiResort_v8.glb");
