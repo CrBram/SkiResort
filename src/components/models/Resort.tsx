@@ -1,53 +1,15 @@
 import { useGLTF } from "@react-three/drei";
-import * as THREE from "three";
 
-interface ResortProps {
-  [key: string]: any;
-}
-
-export function Resort(props: ResortProps) {
-  const { nodes, materials } = useGLTF(
-    "/models/SkiResort_test.glb"
-  ) as unknown as {
-    nodes: { [key: string]: THREE.Mesh };
-    materials: { [key: string]: THREE.Material };
-  };
+export function Resort(props: { [key: string]: any }) {
+  const { nodes, materials } = useGLTF("/models/SkiResort_v4.glb") as any;
   return (
     <group {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Catenary002.geometry}
-        material={materials.Cable}
-        position={[2.093, 3.728, 3.339]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Catenary003.geometry}
-        material={materials.Cable}
-        position={[3.509, 4.435, 2.298]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Catenary004.geometry}
-        material={materials.Cable}
-        position={[2.145, 3.707, 3.488]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Catenary005.geometry}
-        material={materials.Cable}
-        position={[3.721, 4.428, 2.299]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Mountains.geometry}
         material={materials.Rock}
-        position={[1.531, -0.248, 1.695]}
+        position={[1.531, -0.248, 0.325]}
         scale={5.163}
       />
       <mesh
@@ -55,10 +17,17 @@ export function Resort(props: ResortProps) {
         receiveShadow
         geometry={nodes.Ground.geometry}
         material={materials.Ground}
-        position={[1.531, -0.259, 1.695]}
-        scale={61.033}
+        position={[1.531, -0.259, 0.325]}
+        scale={8.121}
       />
-      <group position={[-1.814, 0.103, -1.941]} scale={0.086}>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane.geometry}
+        material={materials.Ground}
+        scale={-20.529}
+      />
+      <group position={[-1.814, 0.103, -3.311]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -73,7 +42,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-4.932, 0.128, -3.014]}
+        position={[-4.932, 0.128, -4.384]}
         rotation={[-0.019, 0.003, 0]}
         scale={0.086}
       >
@@ -91,7 +60,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-4.441, 0.128, -1.612]}
+        position={[-4.441, 0.128, -2.982]}
         rotation={[-0.019, 0.003, 0]}
         scale={0.086}
       >
@@ -108,7 +77,7 @@ export function Resort(props: ResortProps) {
           material={materials.LeafGreen}
         />
       </group>
-      <group position={[-3.254, 0.114, -4.68]} scale={0.086}>
+      <group position={[-3.254, 0.114, -6.05]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -123,7 +92,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-5.081, 0.128, -0.537]}
+        position={[-5.081, 0.128, -1.907]}
         rotation={[-0.019, 0.003, 0]}
         scale={0.086}
       >
@@ -141,7 +110,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-5.081, 0.081, 1.636]}
+        position={[-5.081, 0.081, 0.266]}
         rotation={[-0.019, 0.003, 0]}
         scale={0.086}
       >
@@ -159,7 +128,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-4.025, 0.024, 1.657]}
+        position={[-4.025, 0.024, 0.287]}
         rotation={[-0.051, 0.009, 0.052]}
         scale={0.086}
       >
@@ -176,7 +145,7 @@ export function Resort(props: ResortProps) {
           material={materials.LeafGreen}
         />
       </group>
-      <group position={[-1.692, 0.114, -4.425]} scale={0.086}>
+      <group position={[-1.692, 0.114, -5.795]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -190,7 +159,7 @@ export function Resort(props: ResortProps) {
           material={materials.LeafGreen}
         />
       </group>
-      <group position={[-0.05, 0.041, -4.8]} scale={0.086}>
+      <group position={[-0.05, 0.041, -6.17]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -204,7 +173,7 @@ export function Resort(props: ResortProps) {
           material={materials.LeafGreen}
         />
       </group>
-      <group position={[0.163, 0.074, -4.284]} scale={0.086}>
+      <group position={[0.163, 0.074, -5.654]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -218,7 +187,7 @@ export function Resort(props: ResortProps) {
           material={materials.LeafGreen}
         />
       </group>
-      <group position={[1.134, 0.117, -4.551]} scale={0.086}>
+      <group position={[1.134, 0.117, -5.921]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -232,7 +201,7 @@ export function Resort(props: ResortProps) {
           material={materials.LeafGreen}
         />
       </group>
-      <group position={[7.407, 0.103, -2.838]} scale={0.086}>
+      <group position={[7.407, 0.103, -4.208]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -247,7 +216,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[3.613, 0.089, 7.642]}
+        position={[3.613, 0.089, 6.272]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -265,7 +234,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[3.958, 0.067, 8.082]}
+        position={[3.958, 0.067, 6.712]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -283,7 +252,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[4.821, 0.106, 7.563]}
+        position={[4.821, 0.106, 6.193]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -301,7 +270,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[6.353, 0.096, 7.135]}
+        position={[6.353, 0.096, 5.765]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -319,7 +288,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-1.089, 0.097, 7.572]}
+        position={[-1.089, 0.097, 6.202]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -337,7 +306,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-0.041, 0.115, 8.558]}
+        position={[-0.041, 0.115, 7.188]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -355,7 +324,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[0.823, 0.154, 8.039]}
+        position={[0.823, 0.154, 6.669]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -373,7 +342,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[2.354, 0.144, 7.611]}
+        position={[2.354, 0.144, 6.241]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -390,7 +359,7 @@ export function Resort(props: ResortProps) {
           material={materials.LeafGreen}
         />
       </group>
-      <group position={[9.004, 0.06, 0.906]} scale={0.086}>
+      <group position={[9.004, 0.06, -0.464]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -405,7 +374,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[8.586, 0.115, 1.886]}
+        position={[8.586, 0.115, 0.516]}
         rotation={[-0.019, 0.003, 0]}
         scale={0.086}
       >
@@ -423,7 +392,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[9.102, 0.012, 3.272]}
+        position={[9.102, 0.012, 1.902]}
         rotation={[0.102, 0.011, 0.007]}
         scale={0.086}
       >
@@ -441,7 +410,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[8.414, 0.091, 4.337]}
+        position={[8.414, 0.091, 2.967]}
         rotation={[-0.143, -0.005, -0.009]}
         scale={0.086}
       >
@@ -459,7 +428,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[6.926, 0.089, 5.825]}
+        position={[6.926, 0.089, 4.455]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -477,7 +446,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[7.27, 0.067, 8.104]}
+        position={[7.27, 0.067, 6.734]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -495,7 +464,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[6.15, 0.144, 5.793]}
+        position={[6.15, 0.144, 4.423]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -512,7 +481,7 @@ export function Resort(props: ResortProps) {
           material={materials.LeafGreen}
         />
       </group>
-      <group position={[4.191, 0.107, -3.303]} scale={0.086}>
+      <group position={[4.191, 0.107, -4.673]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -526,7 +495,7 @@ export function Resort(props: ResortProps) {
           material={materials.LeafGreen}
         />
       </group>
-      <group position={[5.072, 0.092, -3.679]} scale={0.086}>
+      <group position={[5.072, 0.092, -5.049]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -540,7 +509,7 @@ export function Resort(props: ResortProps) {
           material={materials.LeafGreen}
         />
       </group>
-      <group position={[6.664, 0.071, -3.163]} scale={0.086}>
+      <group position={[6.664, 0.071, -4.533]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -555,7 +524,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-1.234, 1.114, -0.47]}
+        position={[-1.234, 1.135, -2.024]}
         rotation={[-0.019, 0.003, 0]}
         scale={0.093}
       >
@@ -575,14 +544,14 @@ export function Resort(props: ResortProps) {
           castShadow
           receiveShadow
           geometry={nodes.SnowBall001.geometry}
-          material={materials["Snow.022"]}
-          position={[-0.009, 3.23, -0.036]}
+          material={materials["Snow.004"]}
+          position={[-0.055, 3.583, -0.011]}
           rotation={[0.019, -0.003, 0]}
           scale={10.723}
         />
       </group>
       <group
-        position={[-1.615, 1.08, -0.791]}
+        position={[-1.615, 1.08, -2.161]}
         rotation={[-0.019, 0.003, 0]}
         scale={[0.086, 0.075, 0.086]}
       >
@@ -602,14 +571,14 @@ export function Resort(props: ResortProps) {
           castShadow
           receiveShadow
           geometry={nodes.SnowBall002.geometry}
-          material={materials["Snow.023"]}
-          position={[0.05, 3.498, 0.051]}
+          material={materials["Snow.005"]}
+          position={[-0.012, 3.457, -0.007]}
           rotation={[0.02, -0.003, 0]}
           scale={[11.679, 13.329, 11.68]}
         />
       </group>
       <group
-        position={[-1.922, 1, -0.58]}
+        position={[-1.922, 1, -1.95]}
         rotation={[-0.019, 0.003, 0]}
         scale={[0.109, 0.07, 0.109]}
       >
@@ -629,14 +598,14 @@ export function Resort(props: ResortProps) {
           castShadow
           receiveShadow
           geometry={nodes.SnowBall003.geometry}
-          material={materials["Snow.024"]}
-          position={[-0.014, 3.055, 0.029]}
+          material={materials["Snow.006"]}
+          position={[-0.048, 3.361, 0.015]}
           rotation={[0.021, -0.003, 0]}
           scale={[9.158, 14.252, 9.161]}
         />
       </group>
       <group
-        position={[-0.767, 1.014, -1.408]}
+        position={[-0.767, 1.014, -2.778]}
         rotation={[-0.15, 0.069, -0.018]}
         scale={0.091}
       >
@@ -656,14 +625,14 @@ export function Resort(props: ResortProps) {
           castShadow
           receiveShadow
           geometry={nodes.SnowBall004.geometry}
-          material={materials["Snow.025"]}
-          position={[-0.173, 3.54, 0.282]}
+          material={materials.Snow}
+          position={[-0.176, 3.738, 0.28]}
           rotation={[0.152, -0.066, 0.028]}
           scale={10.976}
         />
       </group>
       <group
-        position={[-0.142, 0.115, 9.15]}
+        position={[-0.142, 0.115, 7.78]}
         rotation={[0, -0.069, 0]}
         scale={0.086}
       >
@@ -681,7 +650,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[0.846, 0.154, 8.95]}
+        position={[0.846, 0.154, 7.58]}
         rotation={[0, -0.069, 0]}
         scale={0.086}
       >
@@ -699,7 +668,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[2.432, 0.144, 9.06]}
+        position={[2.432, 0.144, 7.69]}
         rotation={[0, -0.069, 0]}
         scale={0.086}
       >
@@ -717,7 +686,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-1.675, 0.089, 8.071]}
+        position={[-1.675, 0.089, 6.701]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -735,7 +704,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-5.329, 0.115, 9.383]}
+        position={[-5.329, 0.115, 8.013]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -753,7 +722,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-4.466, 0.154, 8.864]}
+        position={[-4.466, 0.154, 7.494]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -771,7 +740,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-2.934, 0.144, 8.436]}
+        position={[-2.934, 0.144, 7.066]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -789,7 +758,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-5.268, 0.115, 7.782]}
+        position={[-5.268, 0.115, 6.412]}
         rotation={[0, -0.069, 0]}
         scale={0.086}
       >
@@ -807,7 +776,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-4.281, 0.154, 7.583]}
+        position={[-4.281, 0.154, 6.213]}
         rotation={[0, -0.069, 0]}
         scale={0.086}
       >
@@ -825,7 +794,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-2.694, 0.144, 7.693]}
+        position={[-2.694, 0.144, 6.323]}
         rotation={[0, -0.069, 0]}
         scale={0.086}
       >
@@ -843,7 +812,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-4.618, 0.154, 8.318]}
+        position={[-4.618, 0.154, 6.948]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -861,7 +830,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-6.085, 0.115, 6.829]}
+        position={[-6.085, 0.115, 5.459]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -879,7 +848,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-5.222, 0.154, 6.31]}
+        position={[-5.222, 0.154, 4.94]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -897,7 +866,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-3.69, 0.144, 5.882]}
+        position={[-3.69, 0.144, 4.512]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -915,7 +884,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-6.024, 0.115, 5.228]}
+        position={[-6.024, 0.115, 3.858]}
         rotation={[0, -0.069, 0]}
         scale={0.086}
       >
@@ -933,7 +902,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-5.037, 0.154, 5.029]}
+        position={[-5.037, 0.154, 3.659]}
         rotation={[0, -0.069, 0]}
         scale={0.086}
       >
@@ -951,7 +920,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-3.45, 0.056, 5.138]}
+        position={[-3.45, 0.056, 3.768]}
         rotation={[0.181, -0.114, -0.02]}
         scale={0.086}
       >
@@ -969,7 +938,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[-5.375, 0.154, 5.764]}
+        position={[-5.375, 0.154, 4.394]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -987,7 +956,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[4.209, 0.103, -4.967]}
+        position={[4.209, 0.103, -6.337]}
         rotation={[Math.PI, -0.294, Math.PI]}
         scale={0.086}
       >
@@ -1005,7 +974,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[7.422, 0.107, -5.455]}
+        position={[7.422, 0.107, -6.825]}
         rotation={[Math.PI, -0.294, Math.PI]}
         scale={0.086}
       >
@@ -1023,7 +992,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[6.688, 0.092, -4.84]}
+        position={[6.688, 0.092, -6.21]}
         rotation={[Math.PI, -0.294, Math.PI]}
         scale={0.086}
       >
@@ -1041,7 +1010,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[5.015, 0.071, -4.872]}
+        position={[5.015, 0.071, -6.242]}
         rotation={[Math.PI, -0.294, Math.PI]}
         scale={0.086}
       >
@@ -1059,7 +1028,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[5.36, 0.071, -4.278]}
+        position={[5.36, 0.071, -5.648]}
         rotation={[Math.PI, -0.294, Math.PI]}
         scale={0.086}
       >
@@ -1076,7 +1045,7 @@ export function Resort(props: ResortProps) {
           material={materials.LeafGreen}
         />
       </group>
-      <group position={[9.004, 0.06, -5.626]} scale={0.086}>
+      <group position={[9.004, 0.06, -6.996]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
@@ -1091,7 +1060,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[8.569, 0.058, -4.645]}
+        position={[8.569, 0.058, -6.015]}
         rotation={[-0.019, 0.003, 0]}
         scale={0.086}
       >
@@ -1109,7 +1078,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[9.028, 0.03, -3.226]}
+        position={[9.028, 0.03, -4.596]}
         rotation={[0.102, 0.011, 0.007]}
         scale={0.086}
       >
@@ -1127,7 +1096,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[8.449, 0.019, -2.129]}
+        position={[8.449, 0.019, -3.499]}
         rotation={[0.144, 0.027, -0.043]}
         scale={0.086}
       >
@@ -1145,7 +1114,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[7.27, 0.067, 8.104]}
+        position={[7.27, 0.067, 6.734]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -1163,7 +1132,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[8.098, 0.096, 6.647]}
+        position={[8.098, 0.096, 5.277]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -1181,7 +1150,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[8.67, 0.089, 5.337]}
+        position={[8.67, 0.089, 3.967]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -1199,7 +1168,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[9.015, 0.067, 7.617]}
+        position={[9.015, 0.067, 6.247]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -1217,7 +1186,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[7.895, 0.144, 5.305]}
+        position={[7.895, 0.144, 3.935]}
         rotation={[0, 0.273, 0]}
         scale={0.086}
       >
@@ -1235,7 +1204,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[0.176, 3.04, 3.672]}
+        position={[0.176, 3.04, 2.302]}
         rotation={[-0.019, 0.003, 0]}
         scale={0.061}
       >
@@ -1262,7 +1231,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[3.648, 3.035, 4.002]}
+        position={[3.648, 3.035, 2.632]}
         rotation={[0.009, -0.031, -0.044]}
         scale={0.061}
       >
@@ -1291,14 +1260,14 @@ export function Resort(props: ResortProps) {
           castShadow
           receiveShadow
           geometry={nodes.SnowBall013.geometry}
-          material={materials.Snow}
+          material={materials["Snow.001"]}
           position={[-0.268, 4.009, -0.122]}
           rotation={[-0.01, 0.031, 0.044]}
           scale={16.479}
         />
       </group>
       <group
-        position={[3.76, 4.191, 1.791]}
+        position={[3.76, 4.191, 0.421]}
         rotation={[0.009, -0.031, -0.044]}
         scale={0.061}
       >
@@ -1325,7 +1294,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[3.823, 4.141, 1.628]}
+        position={[3.823, 4.141, 0.258]}
         rotation={[0.009, -0.031, -0.044]}
         scale={[0.04, 0.032, 0.04]}
       >
@@ -1352,7 +1321,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[2.143, 3.826, 1.522]}
+        position={[2.143, 3.826, 0.152]}
         rotation={[-0.199, 0.039, 0.111]}
         scale={[0.061, 0.042, 0.06]}
       >
@@ -1379,7 +1348,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[3.76, 2.451, -1.042]}
+        position={[3.76, 2.451, -2.412]}
         rotation={[-0.155, 0.014, -0.257]}
         scale={0.05}
       >
@@ -1406,7 +1375,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[0.607, 2.362, 0.749]}
+        position={[0.607, 2.362, -0.621]}
         rotation={[-0.283, -0.016, 0.181]}
         scale={[0.061, 0.048, 0.06]}
       >
@@ -1433,7 +1402,7 @@ export function Resort(props: ResortProps) {
         />
       </group>
       <group
-        position={[0.63, 2.37, 0.9]}
+        position={[0.63, 2.37, -0.47]}
         rotation={[0.183, -0.051, 0.097]}
         scale={[0.06, 0.034, 0.06]}
       >
@@ -1464,7 +1433,7 @@ export function Resort(props: ResortProps) {
         receiveShadow
         geometry={nodes.Cube.geometry}
         material={materials["Material.002"]}
-        position={[-1.732, 1.822, 1.094]}
+        position={[-1.732, 1.822, -0.276]}
         rotation={[0, -1.247, 0]}
         scale={[0.035, 0.012, 0.146]}
       />
@@ -1473,7 +1442,7 @@ export function Resort(props: ResortProps) {
         receiveShadow
         geometry={nodes.Cube001.geometry}
         material={materials["Material.002"]}
-        position={[-0.094, 3.598, 3.232]}
+        position={[-0.094, 3.598, 1.862]}
         rotation={[0, -0.475, 0]}
         scale={[0.035, 0.012, 0.146]}
       />
@@ -1482,7 +1451,7 @@ export function Resort(props: ResortProps) {
         receiveShadow
         geometry={nodes.Cube002.geometry}
         material={materials["Material.003"]}
-        position={[4.311, 4.145, 3.559]}
+        position={[4.311, 4.145, 2.189]}
         rotation={[0, 1.165, 0]}
         scale={[0.035, 0.012, 0.146]}
       />
@@ -1491,7 +1460,7 @@ export function Resort(props: ResortProps) {
         receiveShadow
         geometry={nodes.Cube003.geometry}
         material={materials["Material.004"]}
-        position={[2.884, 4.848, 1.037]}
+        position={[2.884, 4.848, -0.333]}
         rotation={[-Math.PI, 1.172, -Math.PI]}
         scale={[0.035, 0.012, 0.146]}
       />
@@ -1500,17 +1469,275 @@ export function Resort(props: ResortProps) {
         receiveShadow
         geometry={nodes.Catenary.geometry}
         material={materials.Cable}
-        position={[-0.841, 2.581, 2.101]}
+        position={[-0.841, 2.581, 0.731]}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Catenary001.geometry}
         material={materials.Cable}
-        position={[-1.002, 2.563, 2.242]}
+        position={[-1.002, 2.563, 0.872]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Catenary002.geometry}
+        material={materials.Cable}
+        position={[2.093, 3.728, 1.969]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Catenary003.geometry}
+        material={materials.Cable}
+        position={[3.509, 4.435, 0.928]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Catenary004.geometry}
+        material={materials.Cable}
+        position={[2.145, 3.707, 2.118]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Catenary005.geometry}
+        material={materials.Cable}
+        position={[3.721, 4.428, 0.929]}
+      />
+      <group
+        position={[-1.147, 1.051, -1.12]}
+        rotation={[1.809, -0.471, 0.492]}
+        scale={[0.026, 0.33, 0.026]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder.geometry}
+          material={materials.Cabin}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder_1.geometry}
+          material={materials["Cabin.002"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder_2.geometry}
+          material={materials["Cabin.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder_3.geometry}
+          material={materials["Cabin.004"]}
+        />
+      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Wall_Right.geometry}
+        material={materials.Cabin}
+        position={[-1.518, 1.365, -0.974]}
+        rotation={[1.088, -0.212, -1.188]}
+        scale={[0.026, 0.33, 0.026]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Wall_Left.geometry}
+        material={materials.Cabin}
+        position={[-1.276, 1.365, -1.495]}
+        rotation={[1.088, -0.212, -1.188]}
+        scale={[0.026, 0.33, 0.026]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Roof.geometry}
+        material={materials.Cabin}
+        position={[-1.396, 1.405, -1.234]}
+        rotation={[0, -0.435, 0]}
+        scale={[0.347, 0.016, 0.437]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.SnowBall014.geometry}
+          material={materials["Snow.002"]}
+          position={[-0.005, 4.4, -0.004]}
+          rotation={[0, 0.44, 0]}
+          scale={[2.782, 63.516, 2.404]}
+        />
+      </mesh>
+      <group
+        position={[-1.643, 1.231, -1.35]}
+        rotation={[1.809, -0.471, 0.492]}
+        scale={[0.026, 0.33, 0.026]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder127.geometry}
+          material={materials.Cabin}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder127_1.geometry}
+          material={materials["Cabin.005"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder127_2.geometry}
+          material={materials["Cabin.006"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder127_3.geometry}
+          material={materials["Cabin.007"]}
+        />
+      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Chimney.geometry}
+        material={materials.Chimney}
+        position={[-1.191, 1.613, -1.264]}
+        rotation={[0, -0.435, 0]}
+        scale={[0.037, 0.083, 0.037]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Floor.geometry}
+        material={materials.Cabin}
+        position={[-1.379, 1.037, -1.236]}
+        rotation={[0, -0.435, 0]}
+        scale={0.387}
+      />
+      <group
+        position={[-0.146, 2.939, 2.386]}
+        rotation={[1.429, -0.506, -0.287]}
+        scale={[0.019, 0.236, 0.019]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder179.geometry}
+          material={materials.Cabin}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder179_1.geometry}
+          material={materials["Cabin.002"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder179_2.geometry}
+          material={materials["Cabin.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder179_3.geometry}
+          material={materials["Cabin.004"]}
+        />
+      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Wall_Right001.geometry}
+        material={materials.Cabin}
+        position={[-0.285, 3.164, 2.635]}
+        rotation={[1.061, 0.124, -1.789]}
+        scale={[0.019, 0.236, 0.019]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Wall_Left001.geometry}
+        material={materials.Cabin}
+        position={[-0.387, 3.164, 2.237]}
+        rotation={[1.061, 0.124, -1.789]}
+        scale={[0.019, 0.236, 0.019]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Roof001.geometry}
+        material={materials.Cabin}
+        position={[-0.336, 3.193, 2.436]}
+        rotation={[0, 0.25, 0]}
+        scale={[0.249, 0.011, 0.313]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.SnowBall015.geometry}
+          material={materials["Snow.003"]}
+          position={[-0.016, 4.201, 0.01]}
+          rotation={[0, -0.256, 0]}
+          scale={[3.976, 88.772, 3.255]}
+        />
+      </mesh>
+      <group
+        position={[-0.524, 3.068, 2.483]}
+        rotation={[1.429, -0.506, -0.287]}
+        scale={[0.019, 0.236, 0.019]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder182.geometry}
+          material={materials.Cabin}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder182_1.geometry}
+          material={materials["Cabin.005"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder182_2.geometry}
+          material={materials["Cabin.006"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder182_3.geometry}
+          material={materials["Cabin.007"]}
+        />
+      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Chimney001.geometry}
+        material={materials.Chimney}
+        position={[-0.235, 3.341, 2.327]}
+        rotation={[0, 0.25, 0]}
+        scale={[0.027, 0.059, 0.027]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Floor001.geometry}
+        material={materials.Cabin}
+        position={[-0.327, 2.929, 2.427]}
+        rotation={[0, 0.25, 0]}
+        scale={0.277}
       />
     </group>
   );
 }
 
-useGLTF.preload("/models/SkiResort_test.glb");
+useGLTF.preload("/models/SkiResort_v4.glb");
