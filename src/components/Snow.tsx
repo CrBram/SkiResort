@@ -2,20 +2,30 @@ import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-export function Snow() {
+interface SnowProps {
+  centerX?: number;
+  centerY?: number;
+  centerZ?: number;
+}
+
+export function Snow({ centerX = 0, centerY = 0, centerZ = 0 }: SnowProps = {}) {
   const particlesRef = useRef<THREE.Points>(null);
+  const centerRef = useRef({ x: centerX, y: centerY, z: centerZ });
+  
+  // Update center ref when props change
+  centerRef.current = { x: centerX, y: centerY, z: centerZ };
 
   const particleCount = 5000;
   const positions = useMemo(() => {
     const pos = new Float32Array(particleCount * 3);
     for (let i = 0; i < particleCount; i++) {
       const i3 = i * 3;
-      pos[i3] = (Math.random() - 0.5) * 100;
-      pos[i3 + 1] = Math.random() * 30 + 5;
-      pos[i3 + 2] = (Math.random() - 0.5) * 100;
+      pos[i3] = (Math.random() - 0.5) * 100 + centerX;
+      pos[i3 + 1] = Math.random() * 30 + 5 + centerY;
+      pos[i3 + 2] = (Math.random() - 0.5) * 100 + centerZ;
     }
     return pos;
-  }, [particleCount]);
+  }, [particleCount, centerX, centerY, centerZ]);
 
   const velocities = useMemo(() => {
     const vel = new Float32Array(particleCount);
@@ -41,10 +51,10 @@ export function Snow() {
       positions[i3 + 2] += Math.cos(state.clock.elapsedTime + i) * 0.01;
 
       // Reset particle to top when it falls below ground
-      if (positions[i3 + 1] < -10) {
-        positions[i3] = (Math.random() - 0.5) * 100;
-        positions[i3 + 1] = Math.random() * 30 + 5;
-        positions[i3 + 2] = (Math.random() - 0.5) * 100;
+      if (positions[i3 + 1] < -10 + centerRef.current.y) {
+        positions[i3] = (Math.random() - 0.5) * 100 + centerRef.current.x;
+        positions[i3 + 1] = Math.random() * 30 + 5 + centerRef.current.y;
+        positions[i3 + 2] = (Math.random() - 0.5) * 100 + centerRef.current.z;
       }
     }
 
